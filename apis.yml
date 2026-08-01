@@ -1,8 +1,26 @@
 aid: sambatv
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sambatv.png
 name: SambaTV
-description: 'SambaTV is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Samba TV is a media and advertising intelligence company that measures
+  television and streaming viewership across screens using data collected from millions
+  of opted-in smart TVs and connected devices. Its platform gives advertisers, agencies,
+  and publishers cross-screen audience targeting, campaign measurement, and content
+  analytics built on privacy-first, deterministic viewing signals rather than cookies
+  or traditional identifiers. Samba TV operates a gated partner portal (developer.samba.tv,
+  which redirects to partner-portal.tvp.samba.tv) for licensed data partners; as of
+  this enrichment pass it does not publish an open, public developer API, OpenAPI,
+  SDKs, or MCP server.'
 url: https://raw.githubusercontent.com/api-evangelist/sambatv/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Applicative Saas
+- Media
+- Television
+- Streaming
+- Advertising
+- Measurement
+- Analytics
+- Audience Data
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,20 @@ maintainers:
 common:
 - type: Website
   url: https://samba.tv/
+- type: DeveloperPortal
+  url: https://partner-portal.tvp.samba.tv/
+- type: Blog
+  url: https://samba.com/insights
+- type: Support
+  url: https://samba.com/contact-us
+- type: PrivacyPolicy
+  url: https://samba.com/privacy-center/privacy-policy
+- type: TermsOfService
+  url: https://samba.com/privacy-center/samba-terms-of-service
+- type: DomainSecurity
+  url: security/sambatv-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
