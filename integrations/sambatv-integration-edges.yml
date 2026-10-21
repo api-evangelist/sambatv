@@ -5,6 +5,9 @@ checked:
 - https://vendor-list.consensu.org/v3/vendor-list.json
 - https://aws.amazon.com/marketplace/search/results?FULFILLMENT_OPTION_TYPE=DATA_EXCHANGE
 - https://marketplace.databricks.com/
+- https://advertising.amazon.com/partners/directory
+- https://sellercentral.amazon.com/gspn
+- https://sellercentral.amazon.com/selling-partner-appstore
 marketplace_apps: []
 edges:
 - partner_name: IAB Europe TCF Global Vendor List
@@ -120,4 +123,48 @@ edges:
   publisher_verified:
   - Deployed on AWS
   - Standard Data Agreement
+- partner_name: Amazon Ads (partner directory, technology)
+  partner: amazon
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://advertising.amazon.com/partners/directory
+  mirror_of: amazon/integrations/amazon-integration-edges.yml
+  apps:
+  - Samba TV
+  contract_reference:
+    register: Amazon Ads Partner Directory (advertising.amazon.com/partners/directory, GetPartners)
+    registered_name: Samba TV
+    register_id: amzn1.ads1.ma1.4nv0vhpwdpchiwt85es3qjxei
+    matched_domain: samba.tv
+    matched_by: domain
+    services:
+    - ADVERTISING_EFFECTIVENESS
+    - AUDIENCE_AND_TARGETING
+    - AUDIENCE_MEASUREMENT
+    - CAMPAIGN_REPORTING
+    - CLEAN_ROOM_ANALYTICS
+    - DATA_INTEGRATION
+    - MULTI_TOUCH_ATTRIBUTION
+    - REPORTING_AND_ANALYTICS
+    - VIDEO_MEASUREMENT
+    ads_products:
+    - AMAZON_ATTRIBUTION
+    - AMAZON_DSP
+    - AMAZON_MARKETING_CLOUD
+    service_models:
+    - SELF_SERVICE
+    - SERVICE
+    signal_note: listing = participation; accreditation recorded as partner_tier; ads_certifications are Amazon
+      Ads LEARNING certifications held by staff, not product conformance, never certified_products
+    detected_by: sweep-amazon-sp-api-appstore.py
+    detected: '2026-10-21'
+  detected: '2026-10-21'
+  detected_by: sweep-amazon-sp-api-appstore.py
+  partner_tier:
+  - VERIFIED_PARTNER
 source: https://docs.mparticle.com/integrations/samba-tv/audience/
